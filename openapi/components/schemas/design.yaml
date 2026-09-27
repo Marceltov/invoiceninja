@@ -10,9 +10,28 @@
           type: string
           example: Beauty
         design:
-          description: 'The design HTML'
-          type: string
-          example: '<html></html>'
+          description: 'The design template, split into its parts'
+          type: object
+          properties:
+            includes:
+              description: 'The <style> block (CSS) of the design'
+              type: string
+              example: '<style id="style">...</style>'
+            header:
+              description: 'The header HTML'
+              type: string
+            body:
+              description: 'The body HTML'
+              type: string
+            product:
+              description: 'The product table HTML'
+              type: string
+            task:
+              description: 'The task table HTML'
+              type: string
+            footer:
+              description: 'The footer HTML'
+              type: string
         is_custom:
           description: 'Flag to determine if the design is a custom user design'
           type: boolean

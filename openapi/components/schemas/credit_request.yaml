@@ -2,6 +2,10 @@
       required:
         - client_id        
       properties:
+        design_id:
+          description: 'The hashed ID of the design used to render this document'
+          type: string
+          example: 'Wpmbk5ezJn'
         user_id:
           description: 'The user hashed id'
           type: string

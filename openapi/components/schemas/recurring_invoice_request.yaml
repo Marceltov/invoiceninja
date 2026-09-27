@@ -5,6 +5,10 @@
         - due_date
         - frequency_id
       properties:
+        design_id:
+          description: 'The hashed ID of the design used to render this document'
+          type: string
+          example: 'Wpmbk5ezJn'
         client_id:
           description: 'The hashed ID of the client'
           type: string

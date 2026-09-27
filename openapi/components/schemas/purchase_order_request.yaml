@@ -4,6 +4,10 @@
         - date
         - due_date
       properties:
+        design_id:
+          description: 'The hashed ID of the design used to render this document'
+          type: string
+          example: 'Wpmbk5ezJn'
         vendor_id:
           description: 'The hashed ID of the vendor'
           type: string
