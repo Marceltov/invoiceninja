@@ -328,6 +328,13 @@
             type: string
             format: string
           example: D2J234DFA
+      requestBody:
+        description: 'The fields to update'
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RecurringInvoiceRequest"
       responses:
         200:
           description: "Returns the RecurringInvoice object"
